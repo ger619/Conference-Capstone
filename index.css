@@ -17,14 +17,14 @@ body {
 
 @media (max-width: 786px) {
   body {
-    background: url(./images/background-desktop.png);
-    height: 100vh;
+    background: url(./images/backgroundM.png);
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top;
   }
 
   .nav1 {
@@ -45,6 +45,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
+    bottom: 0;
     z-index: 10;
     flex-direction: column;
     background: #ff5a5f;
@@ -111,6 +112,10 @@ body {
     background-position: center;
   }
 
+  .page2 {
+    background: white;
+  }
+
   .prg1 {
     align-items: center;
     text-align: center;
@@ -125,8 +130,9 @@ body {
   }
 
   .underline {
-    background: #ec5242;
-    width: 10%;
+    width: 4%;
+    color: #ec5242;
+    border: 1px solid;
   }
 
   .programCards {
@@ -204,7 +210,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #5f5f5f50;
     padding: 3%;
     text-align: left;
     margin: 3%;
@@ -217,14 +222,50 @@ body {
     width: 140px;
   }
 
+  .feature-card {
+    margin-left: 24px;
+  }
+
+  .feature-card h3 {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #272a31;
+  }
+
+  .feature-card h5 {
+    font-family: 'Lato', sans-serif;
+    color: #ec5242;
+    font-weight: bold;
+    text-align: left;
+    font-style: italic;
+  }
+
+  .feature-card p {
+    font-family: 'Lato', sans-serif;
+    color: #272a31;
+    font-weight: bold;
+    text-align: left;
+  }
+
   .show-more {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #5f5f5f50;
+    background-color: white;
     text-align: initial;
     margin: 3%;
     width: 94%;
+    padding: 10px 10px 10px 40%;
+    border: 1px solid #5f5f5f50;
+  }
+
+  .dis-none1 {
+    display: none;
+  }
+
+  .footer-class {
+    display: none;
   }
 }
 
@@ -343,6 +384,10 @@ body {
     background-position: center;
   }
 
+  .page2 {
+    background: #5f5f5f50;
+  }
+
   .prg1 {
     align-items: center;
     text-align: center;
@@ -363,8 +408,9 @@ body {
   }
 
   .underline {
-    background: #ec5242;
-    width: 10%;
+    width: 4%;
+    color: #ec5242;
+    border: 1px solid;
   }
 
   .programCards {
@@ -440,7 +486,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #5f5f5f50;
     padding: 3%;
     text-align: left;
     margin: 3%;
@@ -453,6 +498,10 @@ body {
     width: 140px;
   }
 
+  .feature-card {
+    margin-left: 24px;
+  }
+
   .feature-card h3 {
     font-family: 'Cocogoose', sans-serif;
     font-size: 20px;
@@ -460,14 +509,95 @@ body {
     color: #272a31;
   }
 
-  .feature-card h6 {
+  .feature-card h5 {
     font-family: 'Lato', sans-serif;
     color: #ec5242;
+    font-weight: bold;
+    text-align: left;
+    font-style: italic;
+  }
+
+  .feature-card p {
+    font-family: 'Lato', sans-serif;
+    color: #272a31;
     font-weight: bold;
     text-align: left;
   }
 
   .show-more {
     display: none;
+  }
+
+  .dis-none {
+    display: none;
+  }
+
+  .footer-class {
+    background: #272a31;
+    padding-bottom: 8%;
+    margin: 0;
+  }
+
+  .footer-class h3 {
+    color: white;
+  }
+
+  .footer-class a {
+    text-align: center;
+    color: #d3d3d3;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    padding: 3%;
+  }
+
+  .faint {
+    text-align: center;
+    color: #d3d3d3;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    padding: 3%;
+  }
+
+  .bold {
+    text-align: center;
+    color: #d3d3d3;
+    text-decoration: none;
+    align-items: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 3%;
+  }
+
+  .footer-class a:hover {
+    color: #ec5242;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+  }
+
+  .footer-content img {
+    width: 20%;
+    height: 20%;
+    margin-right: 5%;
+  }
+
+  .footer-content p {
+    text-align: left;
+    color: #272a31;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 3%;
   }
 }
