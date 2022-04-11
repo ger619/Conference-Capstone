@@ -57,9 +57,6 @@ body {
   }
 }
 
-
-/* Desktop */
-
 @media (min-width: 786px) {
   .nav1 ul {
     background-color: #272a31;
