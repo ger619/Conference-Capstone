@@ -248,6 +248,16 @@ body {
         padding: 10px 10px 10px 40%;
         border: 1px solid #5f5f5f50;
     }
+    .show-less {
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+        text-align: initial;
+        margin: 3%;
+        width: 94%;
+        padding: 10px 10px 10px 40%;
+        border: 1px solid #5f5f5f50;
+    }
     .dis-none1 {
         display: none;
     }
@@ -492,6 +502,9 @@ body {
     .show-more {
         display: none;
     }
+    .show-less {
+        display: none;
+    }
     .dis-none {
         display: none;
     }
@@ -503,36 +516,29 @@ body {
     .footer-class h3 {
         color: white;
     }
-    .footer-class a {
-        text-align: center;
-        color: #d3d3d3;
-        text-decoration: none;
-        align-items: center;
-        font-family: 'Lato', sans-serif;
-        font-size: 28px;
-        padding: 3%;
-    }
     .faint {
         text-align: center;
         color: #d3d3d3;
         text-decoration: none;
+        font-family: 'Lato', sans-serif;
         align-items: center;
-        font-family: 'Cocogoose', sans-serif;
-        font-weight: 200;
+        font-weight: 100;
         font-size: 28px;
         padding: 3%;
+    }
+    .faint:hover {
+        color: #ec5242;
     }
     .bold {
         text-align: center;
         color: #d3d3d3;
         text-decoration: none;
         align-items: center;
-        font-family: 'Cocogoose', sans-serif;
         font-weight: 700;
         font-size: 28px;
         padding: 3%;
     }
-    .footer-class a:hover {
+    .bold:hover {
         color: #ec5242;
     }
     .footer-content {
