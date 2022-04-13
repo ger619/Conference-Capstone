@@ -20,6 +20,17 @@ body {
 }
 
 @media (max-width: 786px) {
+  body {
+    background: url(./images/background-desktop.png);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .nav1 {
     display: none;
   }
@@ -27,6 +38,10 @@ body {
   /* Menu */
   .nav2 {
     margin: 0;
+  }
+
+  .logo {
+    display: none;
   }
 
   .openMenu {
@@ -81,17 +96,18 @@ body {
   }
 
   /* End of Menu */
-  .landing {
-    background: url(./images/background-desktop.png);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
 
+  /* .landing {
+        background: url(./images/background-desktop.png);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    */
   .landing-content {
     margin-left: 24px;
   }
@@ -104,7 +120,7 @@ body {
   .heading2 {
     margin-top: 42px;
     font-family: 'Cocogoose', sans-serif;
-    font-size: 36px;
+    font-size: 26px;
     text-transform: uppercase;
     background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url(./images/it.jpeg);
     background-repeat: repeat;
@@ -187,6 +203,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 25%;
   }
 
   .programCards h3 {
@@ -297,6 +314,7 @@ body {
     width: 94%;
     padding: 10px 10px 10px 40%;
     border: 1px solid #5f5f5f50;
+    display: none;
   }
 
   .dis-none1 {
@@ -361,7 +379,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     color: var(--color-header);
-    margin-top: 5%;
+    margin-top: 25%;
   }
 
   .about-page1 img {
@@ -403,10 +421,65 @@ body {
   .bold:hover {
     color: #ec5242;
   }
+
+  .about-images {
+    clear: both;
+    display: table;
+    padding: 4%;
+  }
+
+  .imageleft {
+    padding: 5px;
+    position: relative;
+  }
+
+  .photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #ec5242;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+  }
+
+  .imageleft:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+
+  .overlay-text {
+    color: white;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 786px) {
   /* Navigation */
+  .logo {
+    width: 128px;
+    margin-top: 0%;
+    margin-left: -8%;
+    margin-right: 10%;
+    margin-bottom: -2%;
+  }
+
   .nav1 ul {
     background-color: #272a31;
     height: 40px;
@@ -431,7 +504,7 @@ body {
   .nav2 .mainMenu {
     margin-top: 30px;
     text-align: right;
-    padding-right: 10%;
+    padding-right: 6%;
     background-color: white;
     margin-bottom: 30px;
   }
@@ -832,41 +905,50 @@ body {
   }
 
   .imageleft {
-    float: left;
-    width: 50%;
     padding: 5px;
+    position: relative;
+    width: 50%;
+    float: left;
   }
 
-  .imageleft img {
+  .photo {
+    display: block;
     width: 100%;
+    height: auto;
   }
 
   .overlay {
     position: absolute;
-    top: 0;
     bottom: 0;
-    left: 0;
+    left: 100%;
     right: 0;
+    background-color: #ec5242;
+    overflow: hidden;
+    width: 0;
     height: 100%;
-    width: 100%;
-    opacity: 0;
     transition: 0.5s ease;
-    background-color: #008cba;
+    opacity: 0.8;
   }
 
-  .imageleft img:hover .overlay {
-    opacity: 1;
+  .imageleft:hover .overlay {
+    width: 100%;
+    left: 0;
   }
 
   .overlay-text {
     color: white;
-    font-size: 20px;
+    font-size: 32px;
     position: absolute;
+    font-family: 'Lato', sans-serif;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    white-space: nowrap;
+  }
+
+  #mainProgram {
+    display: contents;
   }
 }
