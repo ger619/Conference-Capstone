@@ -17,7 +17,7 @@
 
 ## Link to the live page
 
-> Feel free to check the [Portfolio-link](https://ger619.github.io/Conference-Capstone/about.html).
+> Feel free to check the [Portfolio-link](https://ger619.github.io/Conference-Capstone/index.html).
 
 ## Authors
 
