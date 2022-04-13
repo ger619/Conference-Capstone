@@ -102,9 +102,9 @@ const speakers = [{
 {
   id: 2,
   img: './images/Picture3.png',
-  headingThree: 'FirstName LastName',
-  headingFive: 'Bickerman Professor of Entreprenurial Legal Studies at Havard Law School',
-  speakerParagraph: 'Listen to the speaker from various countries about sharing and opening',
+  headingThree: 'Muhamad Gaddafi',
+  headingFive: 'Philanthropist, Creator of the Longest Man Made River',
+  speakerParagraph: 'A man who feeds you controls you. Feed yourself and liberate yourself from slavery',
 },
 
 ];
@@ -133,7 +133,7 @@ const speakers1 = [{
   img: './images/Picture3.png',
   headingThree: 'David Ger',
   headingFive: 'Bickerman Professor of Entreprenurial Legal Studies at Havard Law School',
-  speakerParagraph: 'Listen to the speaker from various countries about sharing and opening',
+  speakerParagraph: 'Every man must marry, no man deserves to go unpunished. Follow for more',
 },
 {
   id: 2,
