@@ -40,7 +40,7 @@ const mainProgram = document.getElementById('mainProgram');
 const prog = [{
   id: 1,
   image: './images/lecture.png',
-  headingProgram: 'Lecture',
+  headingProgram: 'Motivational Speaker',
   paragraphProgram: 'Listen to the speaker from various countries about sharing and opening',
 },
 {
