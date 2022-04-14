@@ -23,13 +23,11 @@ const lessButton = document.querySelector('.show-less');
 function showB() {
   dispNone.style.display = 'block';
   moreButton.style.display = 'none';
-  lessButton.style.display = 'flex';
 }
 
 function hideB() {
   dispNone.style.display = 'none';
   moreButton.style.display = 'block';
-  lessButton.style.display = 'none';
 }
 
 moreButton.addEventListener('click', showB);
